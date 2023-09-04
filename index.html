@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header class="cabeçalho">
+       Lista de presença 
+    </header>
+    <div class="conteudo">
+        <div class="formulario" id="meuFormulario">
+            <input type="text" id="numero" name="numero" maxlength="3" class="campo-input" placeholder="Nº"><br>
+            <input type="text" id="nome" name="nome" class="campo-input" placeholder="Nome"><br>
+            <select id="turma" name="turma">
+                <option value="1º A - D. Sistemas">1º A - D. Sistemas</option>
+                <option value="1º A - N. Ensino Médio">1º A - N. Ensino Médio</option>
+                <option value="1º B - N. Ensino Médio">1º B - N. Ensino Médio</option>
+                <option value="1º C - N. Ensino Médio">1º C - N. Ensino Médio</option>
+                <option value="2º A - D. Sistemas">2º A - D. Sistemas</option>
+                <option value="2º A - Marketing">2º A - Marketing</option>
+                <option value="2º A - N. Ensino Médio">2º A - N. Ensino Médio</option>
+            </select><br>
+            <input type="email" id="email" name="email" class="campo-input" placeholder="Email"><br>
+        
+            <button type="button" class="salvar" onclick="salvarDados()">Incluir</button>
+        </div>
+        
+        <div class="informativo">
+            Este espaço está destinado a conter uma descrição completa do que este exemplo pode fazer
+            se for desenvolvido depois d e horas de tentativas em uma noite sem sono.
+        </div>
+    </div> 
+    <Div class="lista">      
+        <ul id="listaDados"></ul>
+    </div>   
+     
+        <!-- Popup de confirmação -->
+    <div id="popup" class="popup">
+         <div class="popup-content">
+            <button class="close" type="button" onclick="fecharPopup()">Fechar</button>
+            <p>Dados do formulário salvos temporariamente.</p>
+        </div>
+    </div>
+    <script src="javaScript/script.js"></script>
+    <script src="javaScript/ajustar_lista.js"></script>
+    <script src="javaScript/outra_turma.js"></script>
+</body>
+</html>

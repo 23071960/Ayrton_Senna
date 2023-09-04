@@ -1,0 +1,29 @@
+/* Estilos para o corpo da página */
+@import url(styles/header.css);
+@import url(styles/pop_up.css);
+@import url(styles/lista.css);
+@import url(styles/conteudo.css);
+
+:root{
+    font-display:inherit;
+}
+
+body {
+    background-image: url(imagens/fachada.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgba(236, 237, 241, 0.934);
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 5, 142, 0.4); /* Cor semitransparente (aqui é branco com 50% de transparência) */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
