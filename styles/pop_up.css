@@ -1,0 +1,19 @@
+
+/* Estilos para o popup */
+.popup {
+    display: none;
+    position:fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:transparent;
+    color:#fcfcfcec 
+}
+
+.popup-content {
+    background-color: #096c79;
+    border-radius: 15px;
+    padding: 3%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(15, 19, 15, 0.1);
+}

@@ -1,0 +1,56 @@
+/* Estilo da lista de dados */
+
+.lista {
+    text-align: center; /* Centralizar horizontalmente */
+}
+
+/* Estilize a ul */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Torna a ul um elemento inline-block para centralizar horizontalmente */
+}
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+    border: 2px solid rgb(227, 226, 235);
+    font-size: 12px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #264d81;
+    color: #f0f5f1;
+}
+
+/* Estilo para a linha de cabeçalho */
+thead tr {
+    position: sticky;
+    top: 0;
+    background-color: #264d81;
+    color: #f0f5f1;
+}
+
+/* Estilo para a linha de totalização */
+tfoot tr {
+    position: sticky;
+    top: 0; /* Fixar no topo da tabela */
+    background-color: #264d81;
+    color: #f0f5f1;
+}
+
+
+
