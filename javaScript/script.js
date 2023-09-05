@@ -1,25 +1,35 @@
 function salvarDados() {
-    var numero = document.getElementById("numero").value;
-    var nome = document.getElementById("nome").value;
-    const selectTurma = document.getElementById("turma");
-    const outraTurmaInput = document.getElementById("outraTurma");
-    
-    let turmaSelecionada = "";
-    if (selectTurma.value === "personalizada") {
-      turmaSelecionada = outraTurmaInput.value;
-    } else {
-      turmaSelecionada = selectTurma.value;
-    }
+  var numero = document.getElementById("numero").value.trim();
+  var nome = document.getElementById("nome").value.trim();
+  const selectTurma = document.getElementById("turma");
+  const outraTurmaInput = document.getElementById("outraTurma");
   
-    var turma = turmaSelecionada;
-    var email = document.getElementById("email").value;
+  let turmaSelecionada = "";
+  if (selectTurma.value === "personalizada") {
+      turmaSelecionada = outraTurmaInput.value.trim();
+  } else {
+      turmaSelecionada = selectTurma.value;
+  }
 
-    var dados = {
+  var email = document.getElementById("email").value.trim();
+  function exibirTurmaSelecionada() {
+    var selectTurma = document.getElementById("turma");
+    var turmaSelecionada = selectTurma.options[selectTurma.selectedIndex].text;
+    var turmaSelecionadaElement = document.getElementById("turmaSelecionada");
+    turmaSelecionadaElement.textContent = "Turma selecionada: " + turmaSelecionada;
+}
+  // Verifique se os campos obrigatórios estão preenchidos
+  if (numero === "" || nome === "" || turmaSelecionada === "" || email === "") {
+      alert("Por favor, preencha todos os campos obrigatórios.");
+      return; // Aborta a função se campos obrigatórios estiverem vazios
+  }
+
+  var dados = {
       numero: numero,
       nome: nome,
       email: email,
-      turma: turma
-    };
+      turma: turmaSelecionada
+  };
   
     // Verificar se já existem dados salvos
     var dadosAnteriores = sessionStorage.getItem("dadosFormulario");

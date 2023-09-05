@@ -32,7 +32,7 @@ th, td {
 }
 
 th {
-    background-color: #264d81;
+    background-color: var(--cor-azul-de-fundo);
     color: #f0f5f1;
 }
 
@@ -40,7 +40,7 @@ th {
 thead tr {
     position: sticky;
     top: 0;
-    background-color: #264d81;
+    background-color:var(--cor-azul-de-fundo);
     color: #f0f5f1;
 }
 
@@ -48,7 +48,7 @@ thead tr {
 tfoot tr {
     position: sticky;
     top: 0; /* Fixar no topo da tabela */
-    background-color: #264d81;
+    background-color: var(--cor-azul-de-fundo);
     color: #f0f5f1;
 }
 

@@ -1,5 +1,5 @@
 header{
-    background-color: rgba(9, 1, 25, 0.5); /* Cor semitransparente*/
+    background-color: rgba(9, 1, 25, .6); /* Cor semitransparente*/
     display:block; 
     width: 100%;
     height: 40px;

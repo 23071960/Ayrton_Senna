@@ -1,22 +1,21 @@
-
 .informativo {
-  max-width: 100%; /* Define a largura máxima para a div informativo */
-  display: flex;
-  flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha quando não houver espaço */
-  justify-content: space-between; /* Distribui o espaço horizontalmente entre as imagens */
-  align-content: flex-start; /* Alinha as imagens no topo das linhas */
-  padding: 12px;
+  flex: 1; /* Ambos ocupam a mesma largura disponível */
+  height: 200px; /* Adicione "px" para definir a altura */
+  overflow: hidden; /* Ou outro valor, como "scroll" ou "auto" */
+  padding: 10px;
+  border: 3px solid #b5ad06;
+  border-radius: 20px;
 }
 
 .informativo__texto {
   width: 100%; /* Garante que o texto ocupe toda a largura da div informativo */
   margin-bottom: 10px; /* Adiciona margem na parte inferior do texto */
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
 
 }
 .informativo__dica{
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
 
