@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <header class="cabeçalho">
+    <header class="cabeçalho">
        Lista de presença 
     </header>
     <div class="conteudo">
@@ -15,6 +15,7 @@
             <input type="text" id="numero" name="numero" maxlength="3" class="campo-input" placeholder="Nº"><br>
             <input type="text" id="nome" name="nome" class="campo-input" placeholder="Nome"><br>
             <select id="turma" name="turma">
+                <option value="" disabled selected>Escolha uma turma</option>
                 <option value="1º A - D. Sistemas">1º A - D. Sistemas</option>
                 <option value="1º A - N. Ensino Médio">1º A - N. Ensino Médio</option>
                 <option value="1º B - N. Ensino Médio">1º B - N. Ensino Médio</option>
@@ -29,15 +30,41 @@
         </div>
         
         <div class="informativo">
-            Este espaço está destinado a conter uma descrição completa do que este exemplo pode fazer
-            se for desenvolvido depois d e horas de tentativas em uma noite sem sono.
-        </div>
+            <span class="informativo__texto">Alguns momentos nas aulas de Design e protótipo, Ciência da Computação e Programação Mobile.</span>
+            <span class="informativo__dica">Clique nas imagens para acessa os conteúdos</span>
+            <div class="imagem-container">
+                <a href="pagina1.html">
+                    <img src="imagens/foto01.jpg" alt="Foto 01">  <!--style="width: 49%;"-->
+                </a>
+                <a href="pagina2.html">
+                    <img src="imagens/foto02.jpg" alt="Foto 02"><!--style="width: 49%;"-->
+                </a>
+            </div>
+        </div>     
     </div> 
-    <Div class="lista">      
-        <ul id="listaDados"></ul>
-    </div>   
-     
-        <!-- Popup de confirmação -->
+    <div class="lista">
+        <table id="listaDados">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nome</th>
+                    <th>Turma</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas de dados serão preenchidas aqui -->
+            </tbody>
+            <tfoot>
+                <tr class="totalizacao">
+                    <td>Total de Dados:</td>
+                    <td id="totalDados" colspan="3">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <!-- Popup de confirmação -->
     <div id="popup" class="popup">
          <div class="popup-content">
             <button class="close" type="button" onclick="fecharPopup()">Fechar</button>
